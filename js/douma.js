@@ -8,12 +8,12 @@ var window_height = $(window).height();
 /*
  初始化必须设置
  */
-$(function(){
+var doumajs_init_func = function(){
     $(".douma-show").css("height", window_height+"px");
     $(".douma-hide").click(function(){
         $(this).parents(".douma-show").removeClass("douma-doShow");
     });
-});
+};
 
 (function ($) {
 
