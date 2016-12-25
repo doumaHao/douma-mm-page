@@ -147,10 +147,10 @@
         </div>
         <div class="content">
             <div class="tabs">
-                <div class="tab on">支出类型</div>
-                <div class="tab">收入类型</div>
+                <div id="book_in_type_tab" class="tab on" onclick="book_in_type_tab_click_func()">支出类型</div>
+                <div id="book_out_type_tab" class="tab" onclick="book_out_type_tab_click_func()">收入类型</div>
             </div>
-            <div id="book_in_type" class="select-type">
+            <div id="book_in_type" class="select-type select-type-on">
                 <div class="life-icon breakfast"></div>
                 <div class="life-icon accident"></div>
                 <div class="life-icon drinks"></div>
@@ -159,6 +159,12 @@
                 <div class="life-icon leisure"></div>
                 <div class="life-icon lunch"></div>
                 <div class="life-icon medicine"></div>
+            </div>
+            <div id="book_out_type" class="select-type">
+                <div class="life-icon t2-gongzi"></div>
+                <div class="life-icon t2-budongchan"></div>
+                <div class="life-icon t2-licaichanpin"></div>
+                <div class="life-icon t2-yiwaishouru"></div>
             </div>
         </div>
     </div>
@@ -189,18 +195,43 @@
             //记账模块数据还原
             $("#pay_input").html("").append(org_content_pay_input_left).append(org_content_pay_input_right);
         }
-    }
+    };
 
+    //支出类型和收入类型切换
+    var book_in_type_tab_click_func = function(){
+        $("#book_in_type_tab").addClass("on");
+        $("#book_out_type_tab").removeClass("on");
+        $("#book_in_type").show();
+        $("#book_out_type").hide();
+    };
+    var book_out_type_tab_click_func = function(){
+        $("#book_in_type_tab").removeClass("on");
+        $("#book_out_type_tab").addClass("on");
+        $("#book_in_type").hide();
+        $("#book_out_type").show();
+    };
+
+    //记账类型原本html
     var org_content_select_type = $("#select_type").html();
+    //点击记账类型
     var select_type_lick_func = function(){
         $("#select_type_hideDiv").doumaShowHide("show");
     };
 
+    //点击支出类型图标选择该支出类型
     $("#book_in_type").find(".life-icon").click(function(){
         var clone = $(this).clone();
         clone.css("margin-bottom", "0px");
         $("#select_type").html("").append(clone);
         $("#select_type_hideDiv").doumaShowHide("hide");
     });
+    //点击收入类型选择该收入类型
+    $("#book_out_type").find(".life-icon").click(function(){
+        var clone = $(this).clone();
+        clone.css("margin-bottom", "0px");
+        $("#select_type").html("").append(clone);
+        $("#select_type_hideDiv").doumaShowHide("hide");
+    });
+
 </script>
 </html>

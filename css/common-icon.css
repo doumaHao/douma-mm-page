@@ -10,6 +10,10 @@ ktv         KTV
 leisure     休闲
 lunch       午饭
 medicine    医疗
+t2-gongzi   工资
+t2-budongchan   不动产
+t2-licaichanpin 理财产品
+t2-yiwaishouru  意外收入
 */
 
 
@@ -104,4 +108,40 @@ medicine    医疗
 
 .medicine:after{
     content: '医疗';
+}
+
+.t2-budongchan{
+    background: url("cssimg/type2-budongchan.png") no-repeat;
+    background-size: 50px;
+}
+
+.t2-budongchan:after{
+    content: '不动产';
+}
+
+.t2-licaichanpin{
+    background: url("cssimg/type2-licaichanpin.png") no-repeat;
+    background-size: 50px;
+}
+
+.t2-licaichanpin:after{
+    content: '理财产品';
+}
+
+.t2-gongzi{
+    background: url("cssimg/type2-gongzi.png") no-repeat;
+    background-size: 50px;
+}
+
+.t2-gongzi:after{
+    content: '工资';
+}
+
+.t2-yiwaishouru{
+    background: url("cssimg/type2-yiwaishouru.png") no-repeat;
+    background-size: 50px;
+}
+
+.t2-yiwaishouru:after{
+    content: '意外收入';
 }
