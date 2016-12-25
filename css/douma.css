@@ -1,0 +1,59 @@
+
+
+.douma-show{
+    background: #fff;
+    width: 0px;
+    position: fixed;
+    z-index: 200;
+    transition: all,0.6s;
+    transform-style: preserve-3d;
+}
+
+.douma-hide{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: url("./cssimg/close-doumaShowHide.png") no-repeat;
+    background-size: 30px 30px;
+}
+
+.douma-show .title{
+    height: 40px;
+    width: 100%;
+    background: #fafafa;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+}
+
+.douma-show .text{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-left: 50px;
+    height: 40px;
+}
+
+.douma-show .close-btn{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.douma-show .content{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.douma-show-right2left{
+    right: 0px;
+    top: 0px;
+}
+
+.douma-doShow{
+    width: 100%;
+    transition: all,0.6s;
+    transform-style: preserve-3d;
+}

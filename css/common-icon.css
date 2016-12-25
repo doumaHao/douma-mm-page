@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+
+/*
+breakfast   早餐
+accident    意外开支
+drinks      饮料
+electricity 电费
+ktv         KTV
+leisure     休闲
+lunch       午饭
+medicine    医疗
+*/
+
+
+
+.life-icon{
+    height: 64px;
+    width: 50px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.life-icon:after{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    box-sizing: border-box;
+    bottom: 4px;
+    font-size: 12px;
+    left: 0px;
+}
+
+.breakfast{
+    background: url("cssimg/type-breakfast.png") no-repeat;
+    background-size: 50px;
+}
+
+.breakfast:after{
+    content: '早餐';
+}
+
+.accident{
+    background: url("cssimg/type-accident.png") no-repeat;
+    background-size: 50px;
+}
+
+.accident:after{
+    content: '意外开支';
+}
+
+.drinks{
+    background: url("cssimg/type-drinks.png") no-repeat;
+    background-size: 50px;
+}
+
+.drinks:after {
+    content: '饮料';
+}
+
+.electricity{
+    background: url("cssimg/type-electricity.png") no-repeat;
+    background-size: 50px;
+}
+
+.electricity:after{
+    content: '电费';
+}
+
+.ktv{
+    background: url("cssimg/type-ktv.png") no-repeat;
+    background-size: 50px;
+}
+
+.ktv:after{
+    content: 'KTV';
+}
+
+.leisure{
+    background: url("cssimg/type-leisure.png") no-repeat;
+    background-size: 50px;
+}
+
+.leisure:after{
+    content: '休闲';
+}
+
+.lunch{
+    background: url("cssimg/type-lunch.png") no-repeat;
+    background-size: 50px;
+}
+
+.lunch:after{
+    content: '午饭';
+}
+
+.medicine{
+    background: url("cssimg/type-medicine.png") no-repeat;
+    background-size: 50px;
+}
+
+.medicine:after{
+    content: '医疗';
+}

@@ -1,0 +1,434 @@
+#top{
+    width: 100%;
+    height: 40px;
+}
+.index-top{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    background: #fafafa;
+}
+
+.index-top .top-left{
+    height: 24px;
+    width: 60px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    z-index:20;
+}
+
+.index-top .top-mid{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+.index-top .top-right{
+    height: 24px;
+    width: 60px;
+    position: absolute;
+    right: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    z-index: 20;
+}
+
+.book-select{
+    display: inline-block;
+    background: url(../img/icon/icon-bookselect.png) no-repeat;
+    background-position: left center;
+    background-size: 30px 30px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+}
+
+.set{
+    display: inline-block;
+    background: url(../img/icon/icon-set.png) no-repeat;
+    background-position: right center;
+    background-size: 30px 30px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    float: right;
+    margin-right: 10px;
+}
+
+#content{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.month-pay{
+    text-align: center;
+}
+
+.month-pay{
+    height: 100px;
+    width: 100%;
+}
+
+.month-pay .left{
+    width: 40%;
+    float: left;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.month-pay .right{
+    width: 40%;
+    float: right;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.month-pay .text{
+    display: block;
+    width: 100%;
+    color: #e0e0e0;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.month-pay .price{
+    color: #999;
+}
+
+.month-pay .price-yuan{
+    font-size: 20px;
+}
+
+.month-pay .price-dian{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.month-pay .price-fen{
+    font-size: 18px;
+}
+
+.day-pay{
+    height: 100px;
+    text-align: center;
+}
+
+.day-pay .left{
+    width: 40%;
+    float: left;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.day-pay .right{
+    width: 40%;
+    float: right;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.day-pay .text{
+    display: block;
+    width: 100%;
+    color: #888;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.day-pay .price{
+    color: #666;
+}
+
+.day-pay .price-yuan{
+    font-size: 24px;
+}
+
+.day-pay .price-dian{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.day-pay .price-fen{
+    font-size: 14px;
+}
+
+.write-pay{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left:50%;
+    margin-left: -100px;
+}
+
+.write-pay img{
+    height: 100%;
+    width: 100%;
+    transition: all,0.6s;
+    transform-style: preserve-3d;
+}
+
+.write-pay-edit{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left:50%;
+    margin-left: -100px;
+}
+
+.write-pay-edit img{
+    height: 100%;
+    width: 100%;
+    transition: all,0.6s;
+    transform-style: preserve-3d;
+    -moz-transform:rotateX(180deg);
+    -webkit-transform:rotateX(180deg);
+    -o-transform:rotateX(180deg);
+    transform:rotateX(180deg);
+}
+
+.write-pay-text{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.pay-list{
+    width: 100%;
+    background: #fcfcfc;
+    overflow: hidden;
+    margin-top: 200px;
+    transition: all,0.6s;
+    transform-style: preserve-3d;
+}
+
+.pay-list-upHide{
+    transition: all,0.6s;
+    transform-style: preserve-3d;
+    margin-top: -1000px;
+}
+
+
+.pay-list .title{
+    background: #faf3f3 !important;
+    font-size: 14px;
+}
+
+.pay-list p{
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pay-list p:nth-child(2n+1){
+    background: #f3f3f3;
+}
+
+.pay-list span{
+    display: inline-block;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pay-list .type{
+    width: 60px;
+}
+
+.pay-list .price{
+    width: 60px;
+}
+
+.pay-list .save{
+    width: 80px;
+}
+
+.pay-input{
+    width: 100%;
+    background: #fcfcfc;
+    overflow: hidden;
+    margin-top: 1100px;
+    position: relative;
+    display: none;
+}
+
+.pay-input:before{
+    content: '';
+    position: absolute;
+    background: #eee;
+    width: 200%;
+    height: 1px;
+    transform-origin: 0 0;
+    transform: scale(0.5, 0.5);
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.pay-input:after{
+    content: '';
+    position: absolute;
+    background: #eee;
+    width: 200%;
+    height: 1px;
+    transform-origin: 0 0;
+    transform: scale(0.5, 0.5);
+    box-sizing: border-box;
+    bottom: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.pay-input .left{
+    height: 80px;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+}
+
+.pay-input .left img{
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+}
+
+.pay-input .left:after{
+    content: '';
+    position: absolute;
+    background: #eee;
+    width: 1px;
+    height: 200%;
+    transform-origin: 0 0;
+    transform: scale(0.5, 0.5);
+    box-sizing: border-box;
+    top: 0px;
+    right: 0px;
+}
+
+.pay-input .left span{
+    width: 100%;
+    height: 18px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+}
+
+.pay-input .right{
+    height: 80px;
+    width: 100%;
+    padding-left: 100px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.pay-input .right img{
+    height: 24px;
+    width: 24px;
+    float: left;
+    margin-top: 8px;
+    margin-left: 4px;
+}
+
+.pay-input .right span{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 50px;
+    margin-left: 6px;
+    font-size: 14px;
+}
+
+.pay-input .right input{
+    height: 40px;
+    line-height: 40px;
+    border:0 none;
+    background: #fcfcfc;
+    outline:none;
+}
+
+.pay-input .right-top{
+    height: 40px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.pay-input .right-top:after{
+    content: '';
+    position: absolute;
+    background: #eee;
+    width: 200%;
+    height: 1px;
+    transform-origin: 0 0;
+    transform: scale(0.5, 0.5);
+    box-sizing: border-box;
+    bottom: 0px;
+    left: 0px;
+}
+
+.pay-input .right-bot{
+    height: 40px;
+    width: 100%;
+    text-align: left;
+}
+
+#select_type_hideDiv .tabs{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    position: relative;
+}
+
+#select_type_hideDiv .tabs .on{
+    border-bottom: 2px solid #f20000;
+}
+
+#select_type_hideDiv .tabs:after{
+    content: '';
+    position: absolute;
+    background: #eee;
+    width: 200%;
+    height: 1px;
+    transform-origin: 0 0;
+    transform: scale(0.5, 0.5);
+    box-sizing: border-box;
+    bottom: 0px;
+    left: 0px;
+}
+
+#select_type_hideDiv .tab{
+    display: inline-block;
+    width: 30%;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+
+.select-type{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
