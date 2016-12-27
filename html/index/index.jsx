@@ -200,7 +200,7 @@ var THIS_PAGE = React.createClass({
             var edit_switch = $("#edit_switch");
             //显示记一笔账
             if(edit_switch.attr("class") === "write-pay"){
-                edit_switch.attr("class", "write-pay-edit")
+                edit_switch.attr("class", "write-pay-edit");
                 $("#edit_switch_text").text("就这笔");
                 $("#pay_list").addClass("pay-list-upHide");
                 $("#pay_input").show();
@@ -210,7 +210,7 @@ var THIS_PAGE = React.createClass({
             }
             //显示今日账目列表
             else {
-                edit_switch.attr("class", "write-pay")
+                edit_switch.attr("class", "write-pay");
                 $("#edit_switch_text").text("记一笔");
                 $("#pay_input").hide();
                 $("#pay_list").removeClass("pay-list-upHide");
@@ -236,8 +236,6 @@ var THIS_PAGE = React.createClass({
             $("#book_out_type").show();
         });
 
-        //记账类型原本html
-        var org_content_select_type = $("#select_type").html();
         //点击记账类型
         $("#select_type").click(function(){
             select_type_click_func();
