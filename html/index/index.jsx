@@ -1,5 +1,5 @@
 //共同头部
-var Common_top = React.createClass({
+var This_top = React.createClass({
     render: function(){
         return(
             <div id="top">
@@ -113,23 +113,23 @@ var Common_footer = React.createClass({
         return(
             <div id="footer">
                 <div className="footer">
-                    <div className="part book-in">
+                    <div id="bookin" className="part book-in on">
                         <img src="../../img/icon/icon-bookin.png" alt=""/>
                         <span>记账</span>
                     </div>
-                    <div className="part statistics">
+                    <div id="statistics" className="part statistics">
                         <img src="../../img/icon/icon-statistics.png" alt=""/>
                         <span>统计</span>
                     </div>
-                    <div className="part worth">
+                    <div id="worth" className="part worth">
                         <img src="../../img/icon/icon-worth.png" alt=""/>
                         <span>身价</span>
                     </div>
-                    <div className="part friend">
+                    <div id="friend" className="part friend">
                         <img src="../../img/icon/icon-friend.png" alt=""/>
                         <span>朋友圈</span>
                     </div>
-                    <div className="part other">
+                    <div id="other" className="part other">
                         <img src="../../img/icon/icon-other.png" alt=""/>
                         <span>更多</span>
                     </div>
@@ -180,7 +180,7 @@ var THIS_PAGE = React.createClass({
     render: function(){
         return(
             <div>
-                <Common_top/>
+                <This_top/>
                 <This_content/>
                 <Common_footer/>
                 <This_hide/>
@@ -191,6 +191,8 @@ var THIS_PAGE = React.createClass({
 
         //douma.js调用初始化设置
         doumajs_init_func();
+        //共同js初始化设置
+        common_js_init();
 
         //原本记一笔左右内容
         var org_content_pay_input_left = $("#pay_input").find(".left").clone();

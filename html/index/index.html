@@ -13,16 +13,162 @@
     <link rel="stylesheet" href="../../css/common-footer.css">
     <link rel="stylesheet" href="../../css/index.css">
 
-    <script type="text/javascript" src="../../js/browser.min.js" charset="utf-8"></script>
+<!--    <script type="text/javascript" src="../../js/browser.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="../../js/react.js" charset="utf-8"></script>
-    <script type="text/javascript" src="../../js/react-dom.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/react-dom.js" charset="utf-8"></script>-->
+    <script type="text/javascript" src="../../js/vue.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="../../js/jquery.js" charset="utf-8"></script>
     <script type="text/javascript" src="../../js/douma.js" charset="utf-8"></script>
-    <script type="text/babel" src="index.jsx" charset="utf-8"></script>
+    <script type="text/javascript" src="../../js/common-biz.js" charset="utf-8"></script>
+    <script type="text/javascript" src="index.js" charset="utf-8"></script>
 
 </head>
 <body>
-    <div id="container"></div>
+    <div id="top">
+        <div class="index-top">
+            <div class="top-left">
+                <div class="book-select"></div>
+            </div>
+            <div class="top-mid"></div>
+            <div class="top-right">
+                <div class="set"></div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="context">
+            <div class="month-pay">
+                <div class="left">
+                    <span class="text">本月收入</span>
+                <span class="price">
+                    <span class="price-yuan">3215</span>
+                    <span class="price-dian">.</span>
+                    <span class="price-fen">53</span>
+                </span>
+                </div>
+                <div class="right">
+                    <span class="text">本月支出</span>
+                <span class="price">
+                    <span class="price-yuan">1536</span>
+                    <span class="price-dian">.</span>
+                    <span class="price-fen">78</span>
+                </span>
+                </div>
+            </div>
+            <div class="day-pay">
+                <div class="left">
+                    <span class="text">今日收入</span>
+                <span class="price">
+                    <span class="price-yuan">3215</span>
+                    <span class="price-dian">.</span>
+                    <span class="price-fen">53</span>
+                </span>
+                </div>
+                <div class="right">
+                    <span class="text">今日支出</span>
+                <span class="price">
+                    <span class="price-yuan">1536</span>
+                    <span class="price-dian">.</span>
+                    <span class="price-fen">78</span>
+                </span>
+                </div>
+            </div>
+            <div id="edit_switch" class="write-pay">
+                <img src="../../img/write/write-1.png" alt=""/>
+                <span id="edit_switch_text" class="write-pay-text">记一笔</span>
+            </div>
+            <div id="pay_list" class="pay-list">
+                <p class="title">
+                    <span class="type">种类</span>
+                    <span class="price">金额</span>
+                    <span class="save">节省</span>
+                    <span class="bak">备注</span>
+                </p>
+                <p>
+                    <span class="type">早点费</span>
+                    <span class="price">5.5</span>
+                    <span class="save">多花0.5元</span>
+                    <span class="bak">今天过生日</span>
+                </p>
+                <p>
+                    <span class="type">烟钱</span>
+                    <span class="price">8.5</span>
+                    <span class="save">节省1.5</span>
+                    <span class="bak">省钱买房子</span>
+                </p>
+            </div>
+            <div id="pay_input" class="pay-input pay-input-downHide">
+                <div id="select_type" class="left">
+                    <img src="../../img/icon/icon2-type.png" alt=""/>
+                    <span>记账种类</span>
+                </div>
+                <div class="right">
+                    <div class="right-top">
+                        <img src="../../img/icon/icon2-price.png" alt=""/>
+                        <span>金额</span>
+                        <input type="text"/>
+                    </div>
+                    <div class="right-bot">
+                        <img src="../../img/icon/icon2-bak.png" alt=""/>
+                        <span>备注</span>
+                        <input type="text"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer">
+            <div id="bookin" class="part book-in on">
+                <img src="../../img/icon/icon-bookin.png" alt=""/>
+                <span>记账</span>
+            </div>
+            <div id="statistics" class="part statistics">
+                <img src="../../img/icon/icon-statistics.png" alt=""/>
+                <span>统计</span>
+            </div>
+            <div id="worth" class="part worth">
+                <img src="../../img/icon/icon-worth.png" alt=""/>
+                <span>身价</span>
+            </div>
+            <div id="friend" class="part friend">
+                <img src="../../img/icon/icon-friend.png" alt=""/>
+                <span>朋友圈</span>
+            </div>
+            <div id="other" class="part other">
+                <img src="../../img/icon/icon-other.png" alt=""/>
+                <span>更多</span>
+            </div>
+        </div>
+    </div>
+    <div id="select_type_hideDiv" class="douma-show douma-show-right2left">
+        <div class="title">
+            <div class="text"></div>
+            <div class="close-btn douma-hide"></div>
+        </div>
+        <div class="content">
+            <div class="tabs">
+                <div id="book_in_type_tab" class="tab on">支出类型</div>
+                <div id="book_out_type_tab" class="tab">收入类型</div>
+            </div>
+            <div id="book_in_type" class="select-type select-type-on">
+                <div class="life-icon breakfast"></div>
+                <div class="life-icon accident"></div>
+                <div class="life-icon drinks"></div>
+                <div class="life-icon electricity"></div>
+                <div class="life-icon ktv"></div>
+                <div class="life-icon leisure"></div>
+                <div class="life-icon lunch"></div>
+                <div class="life-icon medicine"></div>
+            </div>
+            <div id="book_out_type" class="select-type">
+                <div class="life-icon t2-gongzi"></div>
+                <div class="life-icon t2-budongchan"></div>
+                <div class="life-icon t2-licaichanpin"></div>
+                <div class="life-icon t2-yiwaishouru"></div>
+            </div>
+        </div>
+    </div>
 </body>
 <script>
 </script>
